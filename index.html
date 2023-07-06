@@ -31,7 +31,7 @@
 
 <!---------- TO-DO: ADD FORM CODE HERE DURING CLASS, FOLLOW ALONG TO COMPLETE ---------->
             <!--USE POST METHOD zYBOOKS-->     
-            <form id="contact" method="post" action="https://wp.zybooks.com/form-viewer.php">
+            <form id="contact" method="post" action="https://wp.zybooks.com/form-viewer.php" autocomplete="on">
                 <!--full name-->
                 <label for="name">Full name<span class="required">*</span></label>
                 <input type="text" name="name" id="name" required>
@@ -44,12 +44,12 @@
                 <!--preferred contact method-->
                 <fieldset>
                     <legend>Preferred contact method<span class="required">*</span></legend>
+                     <!--email-->
+                     <input type="radio" name="prefContact" id="prefEmail" value="Email">
+                     <label for="prefEmail">Email</label>
                     <!--phone-->
                     <input type="radio" name="prefPhone" id="prefPhone" value="Phone">
                     <label for="prefPhone">Phone</label>
-                    <!--email-->
-                    <input type="radio" name="prefContact" id="prefEmail" value="Email">
-                    <label for="prefEmail">Email</label>
                 </fieldset>
                 <!--choose your state-->
                 <label for="state">State</label>
